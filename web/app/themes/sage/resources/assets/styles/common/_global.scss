@@ -1,0 +1,276 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  font-weight: 400;
+  background: #f2f2f2;
+  color: $black;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+input,
+button {
+  outline: none;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 77px;
+  padding-bottom: 42px;
+  margin: 0;
+
+  @media screen and (min-width: 1200px) and (max-width: 1800px) {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 34px;
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+    line-height: 1.5;
+    padding-bottom: 0;
+  }
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1800px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  max-width: 1800px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.img {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  max-width: 140px;
+  overflow: hidden;
+
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    max-width: 120px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    max-width: 100px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 80px;
+  }
+}
+
+.button {
+  background: $orange;
+  border: 1px solid $orange;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.13);
+  border-radius: 15px;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.callback {
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    padding-bottom: 25px;
+
+    @media screen and (min-width: 1200px) and (max-width: 1800px) {
+      font-size: 26px;
+      line-height: 1.3;
+      padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1199px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      font-size: 28px;
+    }
+  }
+
+  &__desc {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    max-width: 500px;
+
+    @media screen and (min-width: 1200px) and (max-width: 1800px) {
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    @media screen and (max-width: 1199px) {
+      font-size: 21px;
+      max-width: unset;
+    }
+  }
+
+  &__input {
+    background: #e9e9e9;
+    border-radius: 15px;
+    padding: 28px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 138%;
+    letter-spacing: 0.01em;
+    border: none;
+    margin-bottom: 24px;
+    max-width: 450px;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) and (max-width: 1800px) {
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    max-width: 450px;
+    padding: 19px 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    margin: 0 auto 16px;
+
+    @media screen and (min-width: 1200px) and (max-width: 1800px) {
+      padding: 15px 0;
+      font-size: 26px;
+      line-height: 1.3;
+    }
+  }
+
+  &__approve {
+    width: 100%;
+    max-width: 450px;
+    font-size: 14px;
+    line-height: 16px;
+
+    &_centered {
+      margin: auto;
+    }
+
+    @media screen and (max-width: 1199px) {
+      max-width: unset;
+    }
+  }
+}
+
+.wpcf7-response-output {
+  display: none !important;
+}
+
+.burger {
+  opacity: 1;
+  transition: all 0.3s ease;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+
+    &__svg {
+      fill: #fff;
+    }
+
+    &__close {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

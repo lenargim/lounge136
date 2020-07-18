@@ -1,0 +1,63 @@
+.footer {
+  position: relative;
+  background-color: #f4f4f4;
+  width: 100%;
+  border-top: 2px solid #d5d5d5;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 0;
+    box-sizing: border-box;
+  }
+
+  &__menu,
+  &__callback {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  &__menu-item {
+    font-size: 24px;
+    line-height: 28px;
+    color: #333;
+    margin: 0 30px;
+
+    @media screen and (min-width: 1200px) and (max-width: 1800px) {
+      font-size: 18px;
+      margin: 0 15px;
+    }
+  }
+
+  &__phone {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #333;
+    margin-right: 30px;
+
+    @media screen and (min-width: 1200px) and (max-width: 1800px) {
+      font-size: 24px;
+      margin-right: 20px;
+    }
+  }
+
+  &__modal {
+    padding: 12px 34px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    @media screen and (min-width: 1200px) and (max-width: 1800px) {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+}
